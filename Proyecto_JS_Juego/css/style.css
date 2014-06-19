@@ -1,0 +1,197 @@
+body
+{
+	color:white;
+}
+
+table
+{
+	background-color:black;
+}
+
+td
+{
+	width:25px;
+	height:25px;
+}
+
+label,input
+{
+	display: block;
+}
+
+#titulo
+{
+	position: relative;
+	width: 112px;
+    height: 112px;
+    margin-left: 40%;
+    margin-bottom: 10%;
+
+    -moz-transform: translateX(0px) translateY(50px) skewX(2deg) skewY(-10deg);
+	-webkit-transform: translateX(0px) translateY(50px) skewX(2deg) skewY(-10deg);
+	-o-transform: translateX(0px) translateY(50px) skewX(2deg) skewY(-10deg);
+	-ms-transform: translateX(0px) translateY(50px) skewX(2deg) skewY(-10deg);
+	transform: translateX(0px) translateY(50px) skewX(2deg) skewY(-10deg);
+}
+
+#botonSalir
+{
+	position: absolute;
+	top:520px;
+	left:10px;
+}
+#botonReinicio
+{
+	position: absolute;
+	top:450px;
+	left:10px;
+}
+
+#usuario
+{
+	position: absolute;
+	top:20px;
+	left:15px;
+	padding-left: 2px;
+}
+
+#puntuacion
+{
+	position: absolute;
+	top:20px;
+	left:490px;
+	padding-left: 2px;
+}
+
+#energia
+{
+	position: absolute;
+	top:550px;
+	left:490px;
+	padding-left: 2px;
+}
+
+#botonSalir,#botonReinicio
+{
+	height: 60px;
+	width: 60px;
+	background-color: red;
+	border-radius: 5px;
+	opacity: .50;
+	line-height: 3px;
+} 
+
+#usuario
+{
+	height: 40px;
+	width: 90px;
+	border-radius: 5px;
+	-webkit-box-shadow: 5px 5px 5px 5px #191919;
+	box-shadow: 5px 5px 5px 5px #191919;
+	background-color: #FFC125;
+	opacity: .50;	
+}
+
+#puntuacion
+{
+	height: 30px;
+	width:90px;
+	border-radius: 5px;
+	-webkit-box-shadow: 5px 5px 5px 5px #191919;
+	box-shadow: 5px 5px 5px 5px #191919;
+	background-color: #FFC125;
+	opacity: .50;
+}
+
+#energia
+{
+	height: 30px;
+	width:90px;
+	border-radius: 5px;
+	-webkit-box-shadow: 5px 5px 5px 5px #191919;
+	box-shadow: 5px 5px 5px 5px #191919;
+	background-color: #00FF7F;
+	opacity: .50;
+}
+
+.pantalla
+{
+	width: 580px;
+	height: 580px;
+	background-color:black; 
+}
+.nave, .meteorito, .cola, .explosion, .energy
+{
+	width:20px;
+	height:20px;
+	padding: 0px;
+}
+
+.botonMenu
+{
+	height: 30px;
+	width:90px;
+	color:white;
+	background-color: #298cad;
+	border:none;
+	border-radius: 5px;
+	-webkit-box-shadow: 5px 5px 5px 5px #191919;
+	box-shadow: 5px 5px 5px 5px #191919;
+
+	display: block;
+	margin-left:40%;
+	margin-top:10px;
+
+	-webkit-transition: background 500ms ease;
+	-moz-transition: background 500ms ease;
+	-ms-transition: background 500ms ease;
+	-o-transition: background 500ms ease;
+	transition: background 500ms ease;
+}
+.botonMenu:hover
+{
+	background-color: #5cb8d6;	
+}
+
+.meteorito
+{
+	-moz-animation: meteorito 1s infinite linear;
+	-webkit-animation: meteorito 1s infinite linear;
+	-ms-animation: meteorito 1s infinite linear;
+	-o-animation: meteorito 1s infinite linear;
+	animation:meteorito 1s infinite linear;
+}
+
+	@-webkit-keyframes meteorito {  /* Safari and Chrome */
+		from { -webkit-transform: rotate(0deg) }
+		to   { -webkit-transform: rotate(360deg) }
+	}
+	@-moz-keyframes meteorito{
+		from { -moz-transform: rotate(0deg) }
+		to   { -moz-transform: rotate(360deg) }
+	}
+	@-ms-keyframes meteorito{
+		from { -ms-transform: rotate(0deg) }
+		to   { -ms-transform: rotate(360deg) }
+	}
+	@-o-keyframes meteorito{
+		from { -o-transform: rotate(0deg) }
+		to   { -o-transform: rotate(360deg) }
+	}
+	@keyframes meteorito{
+		from { transform: rotate(0deg) }
+		to   { transform: rotate(360deg) }	
+	}
+}
+.cola{ background-position: 0 0; width: 20px; height: 20px; } 
+.energy{ background-position: 0 -22px; width: 20px; height: 20px; } 
+.meteorito{ background-position: 0 -44px; width: 20px; height: 20px; } 
+.naveDown{ background-position: 0 -66px; width: 20px; height: 20px; } 
+.naveLeft{ background-position: 0 -88px; width: 20px; height: 20px; } 
+.naveRight{ background-position: 0 -110px; width: 20px; height: 20px; } 
+.naveUp{ background-position: 0 -132px; width: 20px; height: 20px; }
+
+.cola,.energy,.meteorito,.naveDown,.naveLeft,.naveRight,.naveUp
+{
+	border-style: none;
+} 
